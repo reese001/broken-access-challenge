@@ -1,0 +1,15 @@
+{
+    "courses": [
+        {"code":"WEBD3000","name":"Web Application Programming II"},
+        {"code":"ISEC2055","name":"Web App Security"},
+        {"code":"INET2005","name":"Web Application Programming I"},
+        {"code":"PROG2700","name":"Client Side Programming"},
+        {"code":"PROG3017","name":"Full Stack Programming"},
+        {"code":"PROG3017","name":"Collaborative Tools for Application Development"},
+        {"code":"WEBD1000","name":"Website Development"},
+        {"code":"WEBD3100","name":"Web Design Fundamentals"},
+        {"code":"PROG1400","name":"Intro to Object Oriented Programming"},
+        {"code":"PROG1700","name":"Logic and Programming"}
+        {"code":"WEBD3031","name":"Integrated Project - Web Programming"}
+    ]
+}
