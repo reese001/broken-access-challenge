@@ -125,7 +125,7 @@
             "description": "GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.",
             "difficulty":2,
             "courses":[
-                {"code":"PROG3017"},
+                {"code":"WEBD3030"},
                 {"code":"WEBD3031"}
             ]
         }

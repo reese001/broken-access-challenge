@@ -18,7 +18,7 @@ export async function getTechnologies() {
 
     
     } catch (error:any) {
-        console.log(`>>> ERROR : ${error.message}`);
+        console.log(`>>> DB ERROR : ${error.message}`);
         throw error;
     } finally {
         mongoClient.close();
