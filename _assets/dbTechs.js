@@ -26,7 +26,7 @@ db.technologies.insert([
     {
         "name": "Javascript (ES21)",
         "description": "JavaScript often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.",
-        "difficulty": 4,
+        "difficulty": 3,
         "courses": [
             {"code": "PROG2700", "name": "Client Side Programming"},
             {"code": "INET2005", "name": "Web Application Programming I"},
@@ -67,7 +67,7 @@ db.technologies.insert([
     {
         "name": "Java",
         "description": "Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.",
-        "difficulty": 4,
+        "difficulty": 3,
         "courses": [
             {"code": "PROG1400", "name": "Intro to Object Oriented Programming"}
         ]
@@ -108,7 +108,7 @@ db.technologies.insert([
     {
         "name": "Sass",
         "description": "Sass (Syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).",
-        "difficulty": 2,
+        "difficulty": 1,
         "courses": [
             {"code": "PROG2700", "name": "Client Side Programming"},
             {"code": "PROG3017", "name": "Full Stack Programming"}
@@ -128,6 +128,15 @@ db.technologies.insert([
         "difficulty": 2,
         "courses": [
             {"code": "WEBD3030", "name": "Collaborative Tools for Application Development"},
+            {"code": "WEBD3031", "name": "Integrated Project - Web Programming"}
+        ]
+    },
+    {
+        "name": "React",
+        "description": "React is a free and open-source front-end JavaScript library for building user interfaces based on components by Facebook Inc. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.",
+        "difficulty": 4,
+        "courses": [
+            {"code": "PROG3017", "name": "Full Stack Programming"},
             {"code": "WEBD3031", "name": "Integrated Project - Web Programming"}
         ]
     }
