@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Security Demo App: Broken Access Control Challenge
 
-## Getting Started
+This is a simple Next.js demo application created to demonstrate and teach about broken access control vulnerabilities. The app has an intentional security vulnerability that students should identify and fix.
 
-First, run the development server:
+## About the App
 
+This is a basic user management system with:
+- A list of users
+- A login system
+- An admin dashboard with the ability to delete users
+
+### Installation
+
+1. Clone this repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone git@github.com:reese001/broken-access-challenge.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run docker-compose
+```bash
+docker-compose up --build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## How to Use the App
 
-To learn more about Next.js, take a look at the following resources:
+1. The home page provides links to the main pages
+2. You can log in as either:
+   - Username: `admin` (admin role)
+   - Username: `user1` (regular user)
+   - Any password will work (for demo purposes)
+3. Try to access the admin dashboard and perform admin actions with a regular user account
+4. Identify where the vulnerability exists in the code
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
