@@ -1,21 +1,4 @@
-version: "3.7"
-
 services:
-    mongo:
-        build:
-            context: ./mongo
-            dockerfile: Dockerfile
-        image: mongo-server
-        container_name: my-mongo-server
-        volumes:
-            - data-volume:/data/db
-        environment:
-            MONGO_INITDB_DATABASE: dbTechs
-        ports:
-            - "27017:27017"
-        networks:
-            - linkednetwork
-
     app:
         build:
             context: ./
@@ -30,8 +13,6 @@ services:
             - node_modules_app:/usr/app/node_modules
         ports:
             - "3000:3000"
-        depends_on:
-            - mongo
         networks:
             - linkednetwork
 
